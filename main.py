@@ -1,5 +1,5 @@
-def replace(string_to_modify, index, string_to_replace):
-    return string_to_modify[:index] + string_to_replace + string_to_modify[index+1:]
+from tools import Decorations, StringTools
+
 
 class Balance:
     def __init__(self, target, users):
@@ -48,7 +48,7 @@ class Balance:
 
         print("Target (T):    ", "$"+str(self.target))
         print("Fairshare (F): ", str(round(fairshare * 100, 2))+"%")
-        print("#@>~-             -~<@#")
+        print(Decorations.DIVIDER)
 
         if self.target > maxs_sum:
             print(
@@ -79,13 +79,13 @@ class Balance:
                 bar = prefix * "-" + infix * "|" + postfix * "-"
 
                 fairshare_tag_index = round(prefix + (fairshare * infix))
-                bar = replace(bar, fairshare_tag_index, "F")
+                bar = StringTools.replace(bar, fairshare_tag_index, "F")
 
                 bar = "[" + bar + "]"
 
                 print(bar, "$"+str(round(user.min + (fairshare * (user.max - user.min)), 2)))
 
-        print("#@>~-             -~<@#")
+        print(Decorations.DIVIDER)
 
 
 

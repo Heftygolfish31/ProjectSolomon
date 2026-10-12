@@ -101,5 +101,6 @@ class Person:
 
 
 if __name__ == "__main__":
-    balance = Balance(35, [Person(30, 15), Person(20, 10), Person(7, 5)])
-    balance.giving()
+    print("Project Solomon Main Module: Unreleased.")
+    print("Hint: Test with the testing file.")
+    print(Decorations.DIVIDER)

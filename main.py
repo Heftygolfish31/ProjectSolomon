@@ -101,6 +101,6 @@ class Person:
 
 
 if __name__ == "__main__":
-    print("Project Solomon Main Module: Unreleased.")
+    print("Project Solomon Main Module: Pre-Release.")
     print("Hint: Test with the testing file.")
     print(Decorations.DIVIDER)

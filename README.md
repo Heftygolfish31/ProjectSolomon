@@ -3,11 +3,11 @@ Project dedicated to a fairshare donation system. A budding mutual aid system of
 
 ## Contents
 
-- main.py
+- `main.py`:
     The main module for Project Solomon.
-- tools.py
+- `tools.py`:
     The tools module for helper functions and decorations.
-- test.py
+- `test.py`:
     Informal testing files so that testing doesn't require extra changes to the main file.
 
 ## Credit
